@@ -1,0 +1,9 @@
+Architecture: amd64
+Description: MultiLanguageSDLProject built using CMake
+Maintainer: Developer
+Package: multilanguagesdlproject
+Priority: optional
+Section: devel
+Version: 1.0.0
+Installed-Size: 65
+
