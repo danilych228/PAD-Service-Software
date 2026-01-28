@@ -1,0 +1,5 @@
+/usr/python_scripts/sdl_app.py
+/usr/python_scripts/setup.py
+/usr/bin/c_sdl_app
+/usr/bin/cpp_sdl_app
+/usr/bin/asm_sdl_app
