@@ -1,9 +1,0 @@
-Architecture: amd64
-Description: ThirdImplementation built using CMake
-Maintainer: Developer Name
-Package: multilanguagesdlproject
-Priority: optional
-Section: devel
-Version: 1.0.0
-Installed-Size: 59
-
