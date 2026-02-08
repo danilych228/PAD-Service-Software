@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG CMakeFiles/asm_sdl_app.dir/main.asm.o CMakeFiles/asm_sdl_app.dir/helper.c.o -o asm_sdl_app  -lSDL2 

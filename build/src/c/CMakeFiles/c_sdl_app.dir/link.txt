@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG CMakeFiles/c_sdl_app.dir/main.c.o -o c_sdl_app  -lSDL2 

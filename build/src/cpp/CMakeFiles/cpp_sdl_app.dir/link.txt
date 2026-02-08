@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/cpp_sdl_app.dir/main.cpp.o -o cpp_sdl_app  -lSDL2 
