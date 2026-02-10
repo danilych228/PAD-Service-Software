@@ -30,7 +30,13 @@ add_executable(pad-health ${SOURCES})
 target_include_directories(pad-health PRIVATE src)
 
 # Link libraries
-target_link_libraries(pad-health PRIVATE pthread curl mosquitto)
+target_link_libraries(pad-health PRIVATE 
+    pthread 
+    curl 
+    mosquitto
+    OpenSSL::SSL
+    OpenSSL::Crypto
+)
 
 # Set properties for the executable
 set_target_properties(pad-health PROPERTIES
