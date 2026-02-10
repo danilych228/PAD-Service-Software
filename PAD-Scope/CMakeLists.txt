@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find required packages
 find_package(PkgConfig REQUIRED)
 find_package(OpenGL REQUIRED)
+pkg_check_modules(FFTW REQUIRED fftw3)
 
 # Find SDL2 using pkg-config if available, otherwise find_package
 if(PKG_CONFIG_FOUND)
@@ -22,6 +23,12 @@ endif()
 # Define source files
 set(SOURCES
     src/main.cpp
+    src/scope.cpp
+    src/analyzer.cpp
+    src/protocol_decoder.cpp
+    src/ui.cpp
+    src/export.cpp
+    src/fft.cpp
 )
 
 # Define header files
@@ -38,6 +45,7 @@ target_include_directories(pad-scope PRIVATE src)
 target_link_libraries(pad-scope PRIVATE 
     ${SDL2_LIBRARIES}
     ${OPENGL_LIBRARIES}
+    ${FFTW_LIBRARIES}
     m  # math library for sin/cos functions
 )
 

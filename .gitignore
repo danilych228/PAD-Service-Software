@@ -1,17 +1,21 @@
 ```
 # Build artifacts
 CMakeFiles/
-cmake-build*/
-build/
-dist/
+cmake-build-*/
+Makefile
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.dll
 
-# Dependencies
-vendor/
-node_modules/
+# Documentation builds
+docs/_build/
+docs/build/
 
-# Logs and temp files
+# Logs
 *.log
-*.tmp
 
 # Environment
 .env
@@ -23,6 +27,7 @@ node_modules/
 .idea/
 *.swp
 *.swo
+*.tmp
 
 # OS
 .DS_Store
@@ -33,34 +38,17 @@ coverage/
 htmlcov/
 .coverage
 
-# Python specific
+# Python (if applicable)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
 *.so
+.Python
 *.egg-info/
 .eggs/
-.mypy_cache/
-.pytest_cache/
-.tox/
-
-# C++/CMake specific
-*.o
-*.obj
-*.a
-*.lib
-*.so
-*.dylib
-*.dll
-*.exe
-*.out
-
-# Gradle
-.gradle/
+dist/
 build/
-
-# Target directory (common in Rust, Zig, etc.)
-target/
+*.egg
 ```
