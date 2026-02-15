@@ -1,21 +1,31 @@
 ```
-# Build artifacts
-CMakeFiles/
-cmake-build-*/
-Makefile
-*.o
-*.a
+# Compiled and build artifacts
 *.so
+*.so.*
 *.dylib
-*.exe
 *.dll
+*.exe
+*.o
+*.obj
+*.a
+*.lib
 
-# Documentation builds
-docs/_build/
-docs/build/
+# Build directories
+build/
+dist/
+target/
 
-# Logs
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.egg-info/
+
+# Logs and temp files
 *.log
+*.tmp
+*.swp
 
 # Environment
 .env
@@ -27,28 +37,13 @@ docs/build/
 .idea/
 *.swp
 *.swo
-*.tmp
-
-# OS
-.DS_Store
-Thumbs.db
 
 # Coverage
 coverage/
 htmlcov/
 .coverage
 
-# Python (if applicable)
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-.Python
-*.egg-info/
-.eggs/
-dist/
-build/
-*.egg
+# OS
+.DS_Store
+Thumbs.db
 ```
